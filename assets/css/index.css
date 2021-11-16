@@ -1,0 +1,170 @@
+/**
+* ESTILOS GERAIS WORKFLOW
+*/
+
+/* IMPORTAÇÃO */
+@import "https://fonts.googleapis.com/css2?family=Roboto";
+
+/* TEXTO */
+:root {
+    --text-title: 400 2rem Roboto, sans-serif;
+    --text-subtitle: 300 1.6rem Roboto, sans-serif;
+    --text-tag: 900 1rem Roboto, sans-serif;
+    --text-status: 300 1.6rem Roboto, sans-serif;
+    --text-waiting: 400 1.8rem Roboto, sans-serif;
+    --text-comment: 400 1.4rem Roboto, sans-serif;
+    --text-photo: 300 3rem Roboto, sans-serif;
+}
+
+/* STATUS */
+div.workflow_aprovacao-container[data-status="integrado_com_erp"] {
+    --type-icon: '\e2bf';
+    --bg-color: #00BCD4;
+}
+div.workflow_aprovacao-container[data-status="enviado_ao_erp"] {
+    --type-icon: '\ea5c';
+    --bg-color: #9C27B0;
+}
+div.workflow_aprovacao-container[data-status="aguardando_aprovacao"] {
+    --type-icon: '\e8b5';
+    --bg-color: #FF9800;
+}
+div.workflow_aprovacao-container[data-status="aprovado"] {
+    --type-icon: '\e86c';
+    --bg-color: #4CAF50;
+}
+div.workflow_aprovacao-container[data-status="reprovado"] {
+    --type-icon: '\e5c9';
+    --bg-color: #F44336;
+}
+div.workflow_aprovacao-container[data-status="enviado_para_aprovacao"] {
+    --type-icon: '\e163';
+    --bg-color: #FF9800;
+}
+
+/* CONTAINER */
+div.workflow_aprovacao-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 40px;
+    border-left: 2px solid #E5E5E5;
+}
+
+/* ICONE */
+div.workflow_aprovacao-icon {
+    height: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    color: #FFF;
+    background-color: var(--bg-color);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -40px;
+}
+div.workflow_aprovacao-icon span:before {
+    content: var(--type-icon);
+}
+
+/* BALAO */
+div.workflow_aprovacao-balloon {
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: -1px 1px 4px #757575;
+    position: relative;
+    flex-grow: 1;
+    display: grid;
+}
+div.workflow_aprovacao-balloon:before {
+    content: '';
+    align-self: center;
+    display: inline-block;
+    border-left: 0 solid #FFF;
+    border-right: 14px solid #FFF;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    filter: drop-shadow(-2px 0 1px #8A8A8A);
+    position: absolute;
+    left: -14px;
+}
+
+/* BALAO > CABECALHO */
+div.workflow_aprovacao-balloon_header {
+    display: flex;
+    align-items: center;
+}
+div.workflow_aprovacao-balloon_header figure {
+    height: 75px;
+    width: 75px;
+    margin-right: 20px;
+    border-radius: 50px;
+    background-color: #595959;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+div.workflow_aprovacao-balloon_header figure > span {
+    font: var(--text-photo);
+    color: #FFF;
+}
+div.workflow_aprovacao-balloon_header figure > img {
+    height: 100%;
+    width: auto;
+}
+div.workflow_aprovacao-balloon_header > h4 {
+    font: var(--text-title);
+    margin-top: 0;
+}
+div.workflow_aprovacao-balloon_header > h5 {
+    font: var(--text-subtitle);
+    margin-top: 0;
+}
+
+/* BALAO > CORPO */
+div.workflow_aprovacao-balloon_body > p {
+    font: var(--text-status);
+}
+div.workflow_aprovacao-balloon_body
+div.workflow_aprovacao-tag {
+    padding-top: 14px;
+}
+div.workflow_aprovacao-tag > span {
+    color: #FFF;
+    font: var(--text-tag);
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 4px 6px;
+    margin: 2px 0;
+    border-radius: 25px;
+}
+div.workflow_aprovacao-tag > span:last-child {
+    background-color: #00BCD4;
+}
+div.workflow_aprovacao-tag > span:first-child {
+    background-color: var(--bg-color);
+}
+
+/* COMENTARIO */
+div.workflow_aprovacao-waiting {
+    display: flex;
+    align-items: center;
+}
+div.workflow_aprovacao-waiting,
+div.workflow_aprovacao-comment {
+    padding-top: 20px;
+}
+div.workflow_aprovacao-waiting span {
+    color: var(--bg-color);
+}
+div.workflow_aprovacao-waiting p {
+    color: #999999;
+    font: var(--text-waiting);
+    margin: 0 0 0 10px;
+}
+div.workflow_aprovacao-comment p {
+    font: var(--text-comment);
+}

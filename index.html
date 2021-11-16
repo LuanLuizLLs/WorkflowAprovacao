@@ -1,0 +1,207 @@
+<html lang="pt-BR">
+<head>
+    <title>Workflow de Aprovação</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <!-- JS -->
+    <script src="assets/vendor/jquery-1.12.4/jquery.min.js" defer></script>
+    <script src="assets/vendor/bootstrap-3.3.7/js/bootstrap.min.js" defer></script>
+</head>
+<body>
+
+<!-- WORKFLOW DE APROVAÇÃO -->
+<main class="workflow_aprovacao">
+    <div class="container">
+        <!-- INTEGRADO COM ERP -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="workflow_aprovacao-container" data-status="integrado_com_erp">
+                    <div class="workflow_aprovacao-icon">
+                        <span class="material-icons"></span>
+                    </div>
+                    <div class="workflow_aprovacao-balloon">
+                        <div class="workflow_aprovacao-balloon_header">
+                            <h4>Retorno Positivo do ERP</h4>
+                        </div>
+                        <div class="workflow_aprovacao-balloon_body">
+                            <p>
+                                Previsão Pagamento 01/09/2019
+                            </p>
+                            <div class="workflow_aprovacao-tag">
+                                <span>Integrado com ERP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ENVIADO AO ERP -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="workflow_aprovacao-container" data-status="enviado_ao_erp">
+                    <div class="workflow_aprovacao-icon">
+                        <span class="material-icons"></span>
+                    </div>
+                    <div class="workflow_aprovacao-balloon">
+                        <div class="workflow_aprovacao-balloon_header">
+                            <h4>Aguardando Retorno do ERP</h4>
+                        </div>
+                        <div class="workflow_aprovacao-balloon_body">
+                            <p>
+                                Processo aprovado em: 12/11/2021 18:20:25
+                            </p>
+                            <div class="workflow_aprovacao-tag">
+                                <span>Enviado ao ERP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- AGUARDANDO APROVAÇÃO -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="workflow_aprovacao-container" data-status="aguardando_aprovacao">
+                    <div class="workflow_aprovacao-icon">
+                        <span class="material-icons"></span>
+                    </div>
+                    <div class="workflow_aprovacao-balloon">
+                        <div class="workflow_aprovacao-balloon_header">
+                            <div>
+                                <figure>
+                                    <span class="hidden">U1</span>
+                                    <img src="assets/img/user-photo.png" alt="imagem de perfil do usuário" />
+                                </figure>
+                            </div>
+                            <div>
+                                <h4>Usuário 1</h4>
+                                <h5>99999999999</h5>
+                                <div class="workflow_aprovacao-tag">
+                                    <span>Aguardando aprovação</span>
+                                    <span>Nível 3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="workflow_aprovacao-balloon_body">
+                            <div class="workflow_aprovacao-waiting">
+                                <div>
+                                    <span class="material-icons">&#xe8b5;</span>
+                                </div>
+                                <div>
+                                    <p>
+                                        Aguardando ação do usuário...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- APROVADO -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="workflow_aprovacao-container" data-status="aprovado">
+                    <div class="workflow_aprovacao-icon">
+                        <span class="material-icons"></span>
+                    </div>
+                    <div class="workflow_aprovacao-balloon">
+                        <div class="workflow_aprovacao-balloon_header">
+                            <div>
+                                <figure>
+                                    <span>U2</span>
+                                    <img class="hidden" src="assets/img/user-photo.png" alt="imagem de perfil do usuário" />
+                                </figure>
+                            </div>
+                            <div>
+                                <h4>Usuário 2</h4>
+                                <h5>99999999999</h5>
+                                <div class="workflow_aprovacao-tag">
+                                    <span>Aprovado</span>
+                                    <span>Nível 2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="workflow_aprovacao-balloon_body">
+                            <div class="workflow_aprovacao-comment">
+                                <p>
+                                    12/11/2021 - 12:25:32
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta malesuada luctus. Aliquam sed odio vel risus egestas feugiat in vel elit. Sed risus sem, eleifend at cursus id, congue in ligula.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- REPROVADO -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="workflow_aprovacao-container" data-status="reprovado">
+                    <div class="workflow_aprovacao-icon">
+                        <span class="material-icons"></span>
+                    </div>
+                    <div class="workflow_aprovacao-balloon">
+                        <div class="workflow_aprovacao-balloon_header">
+                            <div>
+                                <figure>
+                                    <span>U3</span>
+                                    <img class="hidden" src="assets/img/user-photo.png" alt="imagem de perfil do usuário" />
+                                </figure>
+                            </div>
+                            <div>
+                                <h4>Usuário 3</h4>
+                                <h5>99999999999</h5>
+                                <div class="workflow_aprovacao-tag">
+                                    <span>Reprovado</span>
+                                    <span>Nível 1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="workflow_aprovacao-balloon_body">
+                            <div class="workflow_aprovacao-comment">
+                                <p>
+                                    12/11/2021 - 12:25:32
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta malesuada luctus. Aliquam sed odio vel risus egestas feugiat in vel elit. Sed risus sem, eleifend at cursus id, congue in ligula.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ENVIADO PARA APROVAÇÃO -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="workflow_aprovacao-container" data-status="enviado_para_aprovacao">
+                    <div class="workflow_aprovacao-icon">
+                        <span class="material-icons"></span>
+                    </div>
+                    <div class="workflow_aprovacao-balloon">
+                        <div class="workflow_aprovacao-balloon_header">
+                            <h4>Enviado para aprovação</h4>
+                        </div>
+                        <div class="workflow_aprovacao-balloon_body">
+                            <p>
+                                Processo de pagamento enviado em: 01/09/2021 08:25:24
+                            </p>
+                            <div class="workflow_aprovacao-tag">
+                                <span>Enviado para aprovação</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
