@@ -48,23 +48,7 @@ div.workflow_aprovacao-container {
     align-items: center;
     padding: 10px;
     margin-left: 40px;
-    position: relative;
-}
-div.workflow_aprovacao-container:before {
-    content: '';
-    height: 100%;
-    position: absolute;
     border-left: 2px solid #E5E5E5;
-}
-div.row:last-child div.workflow_aprovacao-container:before {
-    content: '';
-    height: 50%;
-    top: 0;
-}
-div.row:first-child div.workflow_aprovacao-container:before {
-    content: '';
-    height: 50%;
-    bottom: 0;
 }
 
 /* ICONE */
@@ -79,7 +63,7 @@ div.workflow_aprovacao-icon {
     align-items: center;
     justify-content: center;
     position: relative;
-    left: -30px;
+    left: -40px;
 }
 div.workflow_aprovacao-icon span:before {
     content: var(--type-icon);
