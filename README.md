@@ -1,5 +1,5 @@
 # Template - Workflow de Aprovação.
-Workflow de Processo de Aprovação com lógica dinâmico de estilização de acordo com o status.
+Workflow de Processo de Aprovação com lógica dinâmica de estilização de acordo com o status.
 
 # Ferramentas:
 - HTML5;
