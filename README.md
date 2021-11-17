@@ -11,7 +11,7 @@ Workflow de Processo de Aprovação com lógica dinâmica de estilização de ac
 
 # Funcionalidades:
 O Workflow possui um layout totalmente responsivo e adaptável de fácil uso:
-- Os elementos de div que possuem a class "workflow_aprovacao-container" possuem um atributo chamado "data-status" que é analisado pelo CSS e conforma o valor, é possivel alterar a cor primária do elemento e o ícone correspondente.
+- Os elementos de div que possuem a class **workflow_aprovacao-container** possuem um atributo chamado *data-status* que é analisado pelo CSS e conforma o valor, é possivel alterar a cor primária do elemento e o ícone correspondente.
 
 # Imagens:
 ![image](https://user-images.githubusercontent.com/37859294/142251857-19dadc7d-fdd8-4b21-b48d-004b0881706f.png)
