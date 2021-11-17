@@ -131,11 +131,11 @@ div.workflow_aprovacao-balloon_header figure > img {
     height: 100%;
     width: auto;
 }
-div.workflow_aprovacao-balloon_header > h4 {
+div.workflow_aprovacao-balloon_header 4 {
     font: var(--text-title);
     margin-top: 0;
 }
-div.workflow_aprovacao-balloon_header > h5 {
+div.workflow_aprovacao-balloon_header h5 {
     font: var(--text-subtitle);
     margin-top: 0;
 }
