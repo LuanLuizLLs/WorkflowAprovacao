@@ -59,13 +59,11 @@ div.workflow_aprovacao-container:before {
 div.row:last-child div.workflow_aprovacao-container:before {
     content: '';
     height: 50%;
-    position: absolute;
     top: 0;
 }
 div.row:first-child div.workflow_aprovacao-container:before {
     content: '';
     height: 50%;
-    position: absolute;
     bottom: 0;
 }
 
