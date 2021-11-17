@@ -4,8 +4,8 @@ Workflow de Processo de Aprovação com uma lógica dinâmico de estilização.
 # Ferramentas:
 - HTML5;
 - CSS3;
-- Bootstrap 3.3.7;
-- JQuery 1.12.4;
+- Bootstrap v3.3.7;
+- JQuery v1.12.4;
 - Google Material Icons;
 - Google Fonts.
 
