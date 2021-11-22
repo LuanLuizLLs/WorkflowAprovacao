@@ -2,7 +2,7 @@
 * ESTILOS GERAIS WORKFLOW
 */
 
-/* IMPORTAÇÃO */
+/* IMPORTACAO */
 @import "https://fonts.googleapis.com/css2?family=Roboto";
 
 /* TEXTO */
@@ -26,7 +26,7 @@ div.workflow_aprovacao-container[data-status="enviado_ao_erp"] {
     --bg-color: #9C27B0;
 }
 div.workflow_aprovacao-container[data-status="aguardando_aprovacao"] {
-    --type-icon: '\e8b5';
+    --type-icon: '\efd6';
     --bg-color: #FF9800;
 }
 div.workflow_aprovacao-container[data-status="aprovado"] {
@@ -56,12 +56,16 @@ div.workflow_aprovacao-container:before {
     position: absolute;
     border-left: 2px solid #E5E5E5;
 }
-div.row:last-child div.workflow_aprovacao-container:before {
+div.row:first-child div.workflow_aprovacao-container:before {
+    content: '';
+    height: 0;
+}
+div.row:last-child:not(:first-child) div.workflow_aprovacao-container:before {
     content: '';
     height: 50%;
     top: 0;
 }
-div.row:first-child div.workflow_aprovacao-container:before {
+div.row:first-child:not(:last-child) div.workflow_aprovacao-container:before {
     content: '';
     height: 50%;
     bottom: 0;
